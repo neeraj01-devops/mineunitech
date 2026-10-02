@@ -1,0 +1,166 @@
+/*-----------------------------------------------------------------------------------
+    CLIENTS PAGE STYLES — CONVEYOR-PRODUCT-WEB-2026
+    Branded Client Showcase Grid Matching Reference Specification
+-----------------------------------------------------------------------------------*/
+
+:root {
+  --client-red: #E31B23;
+  --client-dark: #111827;
+  --client-text: #4B5563;
+  --client-border: #E5E7EB;
+  --client-bg-card: #FFFFFF;
+}
+
+/* Header Section */
+.clients-intro-section {
+  padding: 40px 0 25px;
+  background: #FFFFFF;
+  text-align: center;
+}
+
+.clients-intro-container {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.clients-eyebrow {
+  display: inline-block;
+  font-family: var(--rs-ff-title, "Space Grotesk", sans-serif);
+  font-size: 14px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  color: var(--client-red);
+  margin-bottom: 12px;
+}
+
+.clients-main-title {
+  font-family: var(--rs-ff-title, "Space Grotesk", sans-serif);
+  font-size: 38px;
+  font-weight: 800;
+  color: var(--client-dark);
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+.clients-main-title span {
+  color: var(--client-red);
+}
+
+.clients-description {
+  font-family: var(--rs-ff-body, "Inter", sans-serif);
+  font-size: 16px;
+  color: var(--client-text);
+  line-height: 1.65;
+  margin: 0 auto;
+}
+
+/* Clients Grid Section */
+.clients-grid-section {
+  padding: 10px 0 50px;
+  background: #FFFFFF;
+}
+
+.client-card {
+  background: var(--client-bg-card);
+  border: 1px solid var(--client-border);
+  border-radius: 8px;
+  padding: 22px 18px 18px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
+}
+
+.client-card:hover {
+  transform: translateY(-4px);
+  border-color: #D1D5DB;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.07);
+}
+
+.client-logo-wrapper {
+  height: 56px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.client-logo-wrapper img {
+  max-height: 48px;
+  max-width: 175px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.2s ease;
+}
+
+.client-card:hover .client-logo-wrapper img {
+  transform: scale(1.04);
+}
+
+.client-name {
+  font-family: var(--rs-ff-title, "Space Grotesk", sans-serif);
+  font-size: 13.5px;
+  font-weight: 700;
+  color: var(--client-dark);
+  margin: 0;
+  line-height: 1.35;
+  letter-spacing: -0.1px;
+}
+
+/* Bottom CTA Banner */
+.clients-cta-box {
+  background: #F8F9FB;
+  border: 1px solid var(--client-border);
+  border-radius: 12px;
+  padding: 40px 30px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.clients-cta-title {
+  font-family: var(--rs-ff-title, "Space Grotesk", sans-serif);
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--client-dark);
+  margin-bottom: 10px;
+}
+
+.clients-cta-desc {
+  font-size: 15px;
+  color: var(--client-text);
+  max-width: 600px;
+  margin: 0 auto 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+  .clients-main-title {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 767px) {
+  .clients-intro-section {
+    padding: 40px 0 25px;
+  }
+  .clients-main-title {
+    font-size: 26px;
+  }
+  .client-card {
+    padding: 18px 14px 14px;
+  }
+  .client-logo-wrapper {
+    height: 50px;
+  }
+  .client-logo-wrapper img {
+    max-height: 42px;
+  }
+}

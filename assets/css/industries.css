@@ -1,0 +1,563 @@
+/*-----------------------------------------------------------------------------------
+    INDUSTRIES SERVED PAGE STYLES — CONVEYOR-PRODUCT-WEB-2026
+    Pixel-perfect 50/50 alternating grid with responsive container & zero overflow
+-----------------------------------------------------------------------------------*/
+
+:root {
+  --ind-red: #E31B23;
+  --ind-red-hover: #C4161C;
+  --ind-dark: #111827;
+  --ind-text: #4B5563;
+  --ind-border: #E5E7EB;
+  --ind-bg-alt: #F8F9FB;
+}
+
+/* Base resets for Industries page elements */
+html, body {
+  overflow-x: hidden;
+}
+
+main {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+/* 1. Header / Eyebrow Hero */
+.ind-header-section {
+  padding: 55px 0 35px;
+  background: #FFFFFF;
+  width: 100%;
+}
+
+.ind-header {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.ind-eyebrow {
+  color: var(--ind-red);
+  font-family: var(--rs-ff-title, "Space Grotesk", sans-serif);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2.2px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  display: inline-block;
+}
+
+.ind-main-heading {
+  font-family: var(--rs-ff-title, "Space Grotesk", sans-serif);
+  font-size: 40px;
+  font-weight: 800;
+  color: var(--ind-dark);
+  margin-bottom: 16px;
+  line-height: 1.22;
+}
+
+.ind-accent-text {
+  color: var(--ind-red);
+}
+
+.ind-main-subtext {
+  color: #64748B;
+  font-size: 15.5px;
+  line-height: 1.65;
+  margin: 0 auto;
+  max-width: 760px;
+}
+
+/* 2. Alternating Industry Sections */
+.ind-section {
+  width: 100%;
+  background: #FFFFFF;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid #EEF2F6;
+}
+
+.ind-section.alt-bg {
+  background: var(--ind-bg-alt);
+}
+
+/* Responsive Container: Max 1400px width, centered with 40px desktop gutters */
+.ind-container {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+/* 50% / 50% Two-Column Desktop Grid */
+.ind-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  align-items: stretch;
+  min-height: 420px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Image Container */
+.ind-image-col {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  min-height: 380px;
+  min-width: 0;
+  box-sizing: border-box;
+  background: #0F172A;
+}
+
+.ind-image-col img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  transition: transform 0.45s ease;
+}
+
+.ind-section:hover .ind-image-col img {
+  transform: scale(1.025);
+}
+
+/* Red Angled Bottom Banner */
+.ind-banner {
+  position: absolute;
+  bottom: 0;
+  background: linear-gradient(135deg, #E31B23 0%, #C4161C 100%);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  z-index: 3;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.25);
+  max-width: 90%;
+  box-sizing: border-box;
+}
+
+/* Left-side banner (Image on LEFT): bottom-left flush, right edge angles down-right */
+.ind-banner-left {
+  left: 0;
+  padding: 12px 42px 12px 18px;
+  clip-path: polygon(0 0, calc(100% - 32px) 0, 100% 100%, 0 100%);
+}
+
+/* Right-side banner (Image on RIGHT): bottom-right flush, left edge angles down-left */
+.ind-banner-right {
+  right: 0;
+  padding: 12px 18px 12px 42px;
+  clip-path: polygon(32px 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.ind-banner-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ind-red);
+  font-size: 20px;
+  flex-shrink: 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.ind-banner-icon svg {
+  width: 22px;
+  height: 22px;
+  stroke: var(--ind-red);
+  stroke-width: 2;
+  fill: none;
+}
+
+.ind-banner-text {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.ind-banner-title {
+  font-family: var(--rs-ff-title, "Space Grotesk", sans-serif);
+  font-size: 13px;
+  font-weight: 800;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.ind-banner-tagline {
+  font-family: var(--rs-ff-title, "Space Grotesk", sans-serif);
+  font-size: 10px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.95);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-top: 2px;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+/* Content Column */
+.ind-content-col {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 38px 45px;
+  min-width: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* Subtle Watermark Graphic */
+.ind-watermark {
+  position: absolute;
+  right: 25px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 170px;
+  height: 170px;
+  opacity: 0.045;
+  pointer-events: none;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.ind-watermark svg {
+  width: 100%;
+  height: 100%;
+  stroke: #111827;
+  stroke-width: 1.5;
+  fill: none;
+}
+
+.ind-content-inner {
+  position: relative;
+  z-index: 2;
+  max-width: 530px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Number with red line */
+.ind-number {
+  color: var(--ind-red);
+  font-family: var(--rs-ff-title, "Space Grotesk", sans-serif);
+  font-size: 15px;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.ind-number-line {
+  display: inline-block;
+  width: 32px;
+  height: 2px;
+  background: var(--ind-red);
+}
+
+.ind-title {
+  font-family: var(--rs-ff-title, "Space Grotesk", sans-serif);
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--ind-dark);
+  margin-bottom: 14px;
+  line-height: 1.25;
+}
+
+.ind-desc {
+  font-size: 14.5px;
+  line-height: 1.66;
+  color: var(--ind-text);
+  margin-bottom: 26px;
+}
+
+/* Feature Items: Horizontal Alignment with Left Icon */
+.ind-features {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.ind-feature-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  flex: 0 1 auto;
+}
+
+.ind-feature-icon {
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ind-feature-icon svg {
+  width: 24px;
+  height: 24px;
+  stroke: var(--ind-red);
+  stroke-width: 1.85;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.ind-feature-text {
+  display: flex;
+  flex-direction: column;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: #1E293B;
+  line-height: 1.25;
+}
+
+/* Red Button */
+.ind-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--ind-red);
+  color: #FFFFFF !important;
+  font-family: var(--rs-ff-title, "Space Grotesk", sans-serif);
+  font-size: 14px;
+  font-weight: 600;
+  padding: 11px 22px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  border: none;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.ind-btn:hover {
+  background: var(--ind-red-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(227, 27, 35, 0.3);
+}
+
+/* 3. Bottom CTA Section */
+.ind-cta-section {
+  padding: 50px 0 60px;
+  background: #FFFFFF;
+  width: 100%;
+}
+
+.ind-cta-box {
+  background: #FFFFFF;
+  border: 1px solid var(--ind-border);
+  border-radius: 14px;
+  padding: 38px 45px;
+  box-shadow: 0 8px 26px rgba(0, 0, 0, 0.04);
+  position: relative;
+  overflow: hidden;
+}
+
+.ind-cta-eyebrow {
+  font-family: var(--rs-ff-title, "Space Grotesk", sans-serif);
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--ind-red);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.ind-cta-heading {
+  font-family: var(--rs-ff-title, "Space Grotesk", sans-serif);
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--ind-dark);
+  margin-bottom: 14px;
+  line-height: 1.25;
+}
+
+.ind-cta-text {
+  font-size: 14.5px;
+  color: var(--ind-text);
+  margin-bottom: 24px;
+  max-width: 480px;
+  line-height: 1.6;
+}
+
+.ind-cta-benefits {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.ind-cta-benefit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 8px;
+  padding: 18px 14px;
+  background: #F9FAFB;
+  border-radius: 10px;
+  border: 1px solid #F3F4F6;
+  transition: all 0.2s ease;
+}
+
+.ind-cta-benefit:hover {
+  background: #FFFFFF;
+  border-color: var(--ind-border);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.ind-cta-benefit i {
+  color: var(--ind-red);
+  font-size: 26px;
+  line-height: 1;
+}
+
+.ind-cta-benefit span {
+  font-size: 13px;
+  font-weight: 600;
+  color: #1F2937;
+  line-height: 1.35;
+}
+
+/* 4. Responsive Breakpoints */
+@media (max-width: 1199px) {
+  .ind-main-heading {
+    font-size: 34px;
+  }
+  .ind-content-col {
+    padding: 40px 35px;
+  }
+  .ind-title {
+    font-size: 28px;
+  }
+  .ind-watermark {
+    width: 140px;
+    height: 140px;
+    right: 15px;
+  }
+  .ind-features {
+    gap: 18px;
+  }
+  .ind-cta-box {
+    padding: 35px 35px;
+  }
+}
+
+@media (max-width: 991px) {
+  .ind-row {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  /* When stacked on mobile/tablet:
+     Odd sections: image first, content second
+     Even sections: content first, image second
+  */
+  .ind-row.stack-img-first > .ind-image-col {
+    order: 1;
+  }
+  .ind-row.stack-img-first > .ind-content-col {
+    order: 2;
+  }
+  .ind-row.stack-content-first > .ind-content-col {
+    order: 1;
+  }
+  .ind-row.stack-content-first > .ind-image-col {
+    order: 2;
+  }
+
+  .ind-image-col {
+    min-height: 320px;
+    max-height: 360px;
+  }
+
+  .ind-content-col {
+    padding: 35px 25px;
+  }
+
+  .ind-watermark {
+    display: none;
+  }
+
+  .ind-cta-box {
+    padding: 30px 20px;
+  }
+
+  .ind-cta-heading {
+    font-size: 26px;
+  }
+
+  .ind-cta-benefits {
+    margin-top: 25px;
+  }
+}
+
+@media (max-width: 575px) {
+  .ind-header-section {
+    padding: 40px 0 20px;
+  }
+  .ind-main-heading {
+    font-size: 26px;
+  }
+  .ind-main-subtext {
+    font-size: 14px;
+  }
+  .ind-image-col {
+    min-height: 240px;
+    max-height: 280px;
+  }
+  .ind-content-col {
+    padding: 26px 16px;
+  }
+  .ind-title {
+    font-size: 22px;
+  }
+  .ind-desc {
+    font-size: 13.5px;
+    margin-bottom: 20px;
+  }
+  .ind-features {
+    gap: 14px;
+    margin-bottom: 22px;
+  }
+  .ind-feature-item {
+    max-width: 100%;
+    flex: 1 1 45%;
+  }
+  .ind-banner {
+    padding: 10px 24px 10px 14px;
+    max-width: 95%;
+  }
+  .ind-banner-icon {
+    width: 34px;
+    height: 34px;
+    font-size: 16px;
+  }
+  .ind-banner-title {
+    font-size: 11px;
+  }
+  .ind-banner-tagline {
+    font-size: 8.5px;
+  }
+  .ind-cta-benefits {
+    grid-template-columns: 1fr;
+  }
+}

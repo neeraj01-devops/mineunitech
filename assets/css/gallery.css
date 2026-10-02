@@ -1,0 +1,266 @@
+/*-----------------------------------------------------------------------------------
+    GALLERY PAGE STYLES — CONVEYOR-PRODUCT-WEB-2026
+    Industrial Conveyor Systems Showcase & Media Grid
+-----------------------------------------------------------------------------------*/
+
+:root {
+  --gal-red: #E31B23;
+  --gal-red-hover: #C4161C;
+  --gal-dark: #111827;
+  --gal-text: #4B5563;
+  --gal-border: #E5E7EB;
+  --gal-bg-light: #F8F9FB;
+}
+
+/* Gallery Intro Section */
+.gallery-intro-section {
+  padding: 40px 0 20px;
+  background: #FFFFFF;
+  text-align: center;
+}
+
+.gallery-intro-container {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.gallery-eyebrow {
+  display: inline-block;
+  font-family: var(--rs-ff-title, "Space Grotesk", sans-serif);
+  font-size: 14px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  color: var(--gal-red);
+  margin-bottom: 12px;
+}
+
+.gallery-main-title {
+  font-family: var(--rs-ff-title, "Space Grotesk", sans-serif);
+  font-size: 38px;
+  font-weight: 800;
+  color: var(--gal-dark);
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+.gallery-main-title span {
+  color: var(--gal-red);
+}
+
+.gallery-description {
+  font-family: var(--rs-ff-body, "Inter", sans-serif);
+  font-size: 16px;
+  color: var(--gal-text);
+  line-height: 1.65;
+  margin: 0 auto;
+}
+
+/* Filter Controls */
+.gallery-filter-wrap {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 18px 0 28px;
+}
+
+.gallery-filter-btn {
+  font-family: var(--rs-ff-title, "Space Grotesk", sans-serif);
+  font-size: 13.5px;
+  font-weight: 700;
+  padding: 8px 20px;
+  border-radius: 30px;
+  border: 1px solid var(--gal-border);
+  background: #FFFFFF;
+  color: var(--gal-text);
+  cursor: pointer;
+  transition: all 0.25s ease;
+  outline: none;
+}
+
+.gallery-filter-btn:hover {
+  border-color: var(--gal-red);
+  color: var(--gal-red);
+}
+
+.gallery-filter-btn.active {
+  background: var(--gal-red);
+  border-color: var(--gal-red);
+  color: #FFFFFF;
+  box-shadow: 0 4px 12px rgba(227, 27, 35, 0.25);
+}
+
+/* Gallery Grid Section */
+.gallery-grid-section {
+  padding: 0 0 50px;
+  background: #FFFFFF;
+}
+
+.gallery-card {
+  background: #FFFFFF;
+  border: 1px solid var(--gal-border);
+  border-radius: 10px;
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+}
+
+.gallery-card:hover {
+  transform: translateY(-6px);
+  border-color: #D1D5DB;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.09);
+}
+
+.gallery-thumb-box {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  width: 100%;
+  overflow: hidden;
+  background: #F3F4F6;
+}
+
+.gallery-thumb-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+  display: block;
+}
+
+.gallery-card:hover .gallery-thumb-box img {
+  transform: scale(1.06);
+}
+
+/* Hover Action Overlay */
+.gallery-thumb-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(17, 24, 39, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.gallery-card:hover .gallery-thumb-overlay {
+  opacity: 1;
+}
+
+.gallery-action-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  color: var(--gal-red);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease;
+  text-decoration: none;
+}
+
+.gallery-action-btn:hover {
+  background: var(--gal-red);
+  color: #FFFFFF;
+  transform: scale(1.1);
+}
+
+/* Card Content */
+.gallery-content {
+  padding: 20px 20px 22px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.gallery-category-badge {
+  display: inline-block;
+  font-family: var(--rs-ff-title, "Space Grotesk", sans-serif);
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  color: var(--gal-red);
+  margin-bottom: 6px;
+}
+
+.gallery-item-title {
+  font-family: var(--rs-ff-title, "Space Grotesk", sans-serif);
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--gal-dark);
+  line-height: 1.35;
+  margin: 0 0 10px;
+}
+
+.gallery-item-title a {
+  color: inherit;
+  transition: color 0.2s ease;
+}
+
+.gallery-item-title a:hover {
+  color: var(--gal-red);
+}
+
+.gallery-view-link {
+  font-family: var(--rs-ff-title, "Space Grotesk", sans-serif);
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--gal-text);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  transition: color 0.2s ease, gap 0.2s ease;
+}
+
+.gallery-view-link:hover {
+  color: var(--gal-red);
+  gap: 10px;
+}
+
+.gallery-view-link i {
+  font-size: 14px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+  .gallery-main-title {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 767px) {
+  .gallery-intro-section {
+    padding: 40px 0 20px;
+  }
+  .gallery-main-title {
+    font-size: 26px;
+  }
+  .gallery-filter-wrap {
+    gap: 6px;
+  }
+  .gallery-filter-btn {
+    font-size: 12px;
+    padding: 6px 14px;
+  }
+  .gallery-content {
+    padding: 16px 16px 18px;
+  }
+  .gallery-item-title {
+    font-size: 16px;
+  }
+}
