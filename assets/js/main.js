@@ -46,13 +46,13 @@
         rs_init_dir();
     }
 
-    /* Append settings HTML  */
-    rs_settings_append(true); /* if you want to enable dark mode, send "true" */
+    /* Floating side settings widget (Disabled) */
+    // rs_settings_append(true); /* if you want to enable dark mode, send "true" */
 
     /* Event listeners  */
-    $(".rs-theme-settings-open-btn").on("click", function () {
-        $(".rs-theme-settings-area").toggleClass("settings-opened");
-    });
+    // $(".rs-theme-settings-open-btn").on("click", function () {
+    //     $(".rs-theme-settings-area").toggleClass("settings-opened");
+    // });
 
     /* Initialize RTL settings if the element is present  */
     if ($("#rs-dir-toggler").length > 0) {
@@ -97,7 +97,8 @@
         </div>
      </div>
          </div>`;
-        settings.append(settings_html);
+        // Floating side settings widget disabled - do not append to body
+        // settings.append(settings_html);
     }
     // rtl setting end
 
@@ -133,8 +134,8 @@ Sidebar Toggle
         $(".offcanvas-overlay").removeClass("overlay-open");
     });
     $(".sidebar-toggle").on("click", function () {
-        $(".offcanvas-area").addClass("info-open");
-        $(".offcanvas-overlay").addClass("overlay-open");
+        $(".offcanvas-area").toggleClass("info-open");
+        $(".offcanvas-overlay").toggleClass("overlay-open");
     });
 
     /* Body overlay Js */
@@ -168,9 +169,11 @@ Sidebar Toggle
     });
 
     /* jarallax js */
-    jarallax(document.querySelectorAll('.jarallax'), {
-        speed: 0.5,
-    });
+    if (typeof jarallax === 'function') {
+        jarallax(document.querySelectorAll('.jarallax'), {
+            speed: 0.5,
+        });
+    }
 
     /* MagnificPopup video view */
     $(".popup-video").magnificPopup({
@@ -214,13 +217,15 @@ Sidebar Toggle
     });
 
     //===== Odometer js
-    $('.odometer').appear(function (e) {
-        var odo = $(".odometer");
-        odo.each(function () {
-            var countNumber = $(this).attr("data-count");
-            $(this).html(countNumber);
+    if (typeof $.fn.appear === 'function') {
+        $('.odometer').appear(function (e) {
+            var odo = $(".odometer");
+            odo.each(function () {
+                var countNumber = $(this).attr("data-count");
+                $(this).html(countNumber);
+            });
         });
-    });
+    }
 
     //search
     $('.rs-header-search-icon').on('click', function (event) {
@@ -618,11 +623,21 @@ Sidebar Toggle
 
 
         /* Mobile Menu Js */
-        $("#mobile-menu").meanmenu({
-            meanMenuContainer: ".mobile-menu",
-            meanScreenWidth: "1199",
-            meanExpand: ['<i class="fa-regular fa-plus"></i>'],
-        });
+        if (typeof $.fn.meanmenu === 'function') {
+            $("#mobile-menu").meanmenu({
+                meanMenuContainer: ".mobile-menu",
+                meanScreenWidth: "1199",
+                meanExpand: ['<i class="fa-regular fa-plus"></i>'],
+            });
+
+            $(document).on("click", ".mean-container .mean-nav ul li a", function (e) {
+                var href = $(this).attr("href");
+                if (href === "#" || href === "javascript:void(0)" || href === "javascript:;") {
+                    e.preventDefault();
+                    $(this).siblings(".mean-expand").trigger("click");
+                }
+            });
+        }
 
         /*======================================
           One Page overlay close

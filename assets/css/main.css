@@ -199,12 +199,12 @@ h6, .body__overlay {
   --rs-white: #FFFFFF;
   --rs-black: #1F1F1F;
   --rs-light: #eee;
-  --rs-theme-orange: #EA5501;
+  --rs-theme-orange: #E30613;
   --rs-theme-red: #E30613;
   --rs-theme-blue: #005EB8;
   --rs-theme-light-blue: #0D80CE;
   --rs-theme-green: #023B4A;
-  --rs-theme-light-green: #507A7C;
+  --rs-theme-light-green: #D40A06;
   --rs-theme-yellow: #F7C600;
   --rs-theme-deep-blue: #3B37FD;
   --rs-theme-cyan: #00CAA4;
@@ -6895,11 +6895,6 @@ html.lenis body {
   }
 }
 @media only screen and (max-width: 1199px) {
-  .rs-header-five .rs-header-menu {
-    padding: 33px 20px 33px 20px;
-  }
-}
-@media only screen and (max-width: 767px) {
   .rs-header-five .rs-header-menu {
     display: none;
   }

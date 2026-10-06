@@ -4,8 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>About Us — Unity Engineering Works | Conveyor & Material Handling Solutions</title>
-    <meta name="description" content="Dedicated to designing and delivering high-quality conveyor and material handling solutions that keep industries moving efficiently, safely and sustainably.">
+    <title>About Us — UNITECH ENGINEERING WORKS | Conveyor & Material Handling Systems</title>
+    <meta name="description" content="UNITECH ENGINEERING WORKS is a premier manufacturer of material handling and conveyor systems, delivering heavy-duty engineered solutions across industrial sectors.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon-green.png">
 
@@ -24,6 +24,952 @@
     <link rel="stylesheet" href="assets/css/about-custom.css">
     <link rel="stylesheet" href="assets/css/site-density.css">
 </head>
+<style>
+
+    .director-section,
+    .director-section * {
+        box-sizing: border-box;
+    }
+
+    .director-section {
+        position: relative;
+        width: 100%;
+        margin: 0;
+        padding: 65px 40px 60px;
+        overflow: hidden;
+        background: #ffffff;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #142039;
+    }
+
+    .director-section::before {
+        content: "";
+        position: absolute;
+        top: -180px;
+        right: -150px;
+        width: 520px;
+        height: 520px;
+        border-radius: 50%;
+        background: #f7f9fc;
+        pointer-events: none;
+    }
+
+    .director-section::after {
+        content: "";
+        position: absolute;
+        right: -85px;
+        top: 42%;
+        width: 190px;
+        height: 190px;
+        background: #ed1c24;
+        transform: rotate(45deg);
+        pointer-events: none;
+    }
+
+    .director-container {
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        max-width: 1600px;
+        margin: 0 auto;
+        padding: 0;
+        display: grid;
+        grid-template-columns: minmax(480px, 42%) minmax(0, 58%);
+        align-items: center;
+        column-gap: 35px;
+    }
+
+    /* =========================
+       LEFT IMAGE AREA
+    ========================= */
+
+    .director-image-area {
+        position: relative;
+        width: 100%;
+        height: 650px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .director-red-frame {
+        position: absolute;
+        z-index: 1;
+        top: 8px;
+        left: 10%;
+        width: 68%;
+        height: 91%;
+        margin: 0;
+        padding: 0;
+        border-radius: 30px;
+        background: #ed1c24;
+        transform: rotate(-2deg);
+    }
+
+    .director-image-wrapper {
+        position: absolute;
+        z-index: 2;
+        top: 38px;
+        left: 14%;
+        width: 76%;
+        height: 570px;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        border: 7px solid #ffffff;
+        border-radius: 27px;
+        background: #ffffff;
+        box-shadow: 0 18px 45px rgba(15, 30, 55, 0.14);
+    }
+
+    .director-image-wrapper img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        object-fit: cover;
+        object-position: center center;
+    }
+
+    /* =========================
+       QUOTE CARD
+    ========================= */
+
+    .director-quote-card {
+        position: absolute;
+        z-index: 5;
+        left: 2%;
+        bottom: 80px;
+        width: 225px;
+        min-height: 260px;
+        margin: 0;
+        padding: 23px 25px 24px;
+        border-radius: 18px;
+        background: #ffffff;
+        box-shadow: 0 15px 40px rgba(18, 32, 54, 0.14);
+    }
+
+    .quote-icon {
+        display: block;
+        width: auto;
+        height: auto;
+        margin: 0 0 8px;
+        padding: 0;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 56px;
+        line-height: 38px;
+        font-weight: 700;
+        color: #ed1c24;
+    }
+
+    .quote-text {
+        margin: 0;
+        padding: 0;
+        font-size: 15px;
+        line-height: 1.58;
+        font-weight: 700;
+        color: #172239;
+    }
+
+    .quote-line {
+        display: block;
+        width: 50px;
+        height: 4px;
+        margin: 17px 0 0;
+        padding: 0;
+        border-radius: 10px;
+        background: #ed1c24;
+    }
+
+    /* =========================
+       DECORATIVE DOTS
+    ========================= */
+
+    .director-dots {
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        right: 1%;
+        width: 100px;
+        height: 85px;
+        margin: 0;
+        padding: 0;
+        background-image: radial-gradient(
+            #ed1c24 2px,
+            transparent 2px
+        );
+        background-size: 18px 18px;
+    }
+
+    .director-dots-bottom {
+        position: absolute;
+        z-index: 1;
+        bottom: 45px;
+        left: -3%;
+        width: 100px;
+        height: 85px;
+        margin: 0;
+        padding: 0;
+        background-image: radial-gradient(
+            #cdd5df 2px,
+            transparent 2px
+        );
+        background-size: 18px 18px;
+    }
+
+    /* =========================
+       RIGHT CONTENT
+    ========================= */
+
+    .director-content {
+        position: relative;
+        z-index: 3;
+        width: 100%;
+        min-width: 0;
+        margin: 0;
+        padding: 5px 0 5px 5px;
+    }
+
+    .director-label {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        width: 100%;
+        margin: 0 0 18px;
+        padding: 0;
+    }
+
+    .director-label-line {
+        display: block;
+        flex: 0 0 auto;
+        width: 45px;
+        height: 4px;
+        margin: 0;
+        padding: 0;
+        border-radius: 10px;
+        background: #ed1c24;
+    }
+
+    .director-label-text {
+        display: block;
+        margin: 0;
+        padding: 0;
+        font-size: 18px;
+        line-height: 1;
+        font-weight: 800;
+        letter-spacing: 1.8px;
+        text-transform: uppercase;
+        color: #26344c;
+    }
+
+    /* =========================
+       MAIN TITLE
+    ========================= */
+
+    .director-title {
+        display: block;
+        width: 100%;
+        max-width: 700px;
+        margin: 0;
+        padding: 0;
+        font-size: clamp(48px, 4.2vw, 72px);
+        line-height: 0.98;
+        font-weight: 800;
+        letter-spacing: -3px;
+        color: #101c33;
+    }
+
+    .director-title > span {
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+
+    .director-title-red {
+        margin-top: 5px !important;
+        color: #ed1c24;
+    }
+
+    .director-title-line {
+        display: block;
+        width: 88px;
+        height: 4px;
+        margin: 30px 0 26px;
+        padding: 0;
+        border-radius: 10px;
+        background: #ed1c24;
+    }
+
+    /* =========================
+       DESCRIPTION
+    ========================= */
+
+    .director-description {
+        width: 100%;
+        max-width: 900px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .director-description p {
+        margin: 0 0 25px;
+        padding: 0;
+        font-size: 18px;
+        line-height: 1.75;
+        font-weight: 400;
+        color: #52627a;
+    }
+
+    .director-description p:last-child {
+        margin-bottom: 0;
+    }
+
+    /* =========================
+       SIGNATURE
+    ========================= */
+
+    .director-signature {
+        width: 100%;
+        margin: 30px 0 0;
+        padding: 0;
+    }
+
+    .signature-name {
+        display: block;
+        margin: 0;
+        padding: 0;
+        font-family: "Brush Script MT", "Segoe Script", cursive;
+        font-size: 48px;
+        line-height: 1;
+        font-weight: 500;
+        letter-spacing: -1px;
+        color: #111d34;
+    }
+
+    .director-name {
+        display: block;
+        margin: 8px 0 0;
+        padding: 0;
+        font-size: 22px;
+        line-height: 1.2;
+        font-weight: 800;
+        color: #111d34;
+    }
+
+    .director-position {
+        display: block;
+        margin: 5px 0 0;
+        padding: 0;
+        font-size: 18px;
+        line-height: 1.4;
+        font-weight: 500;
+        color: #697890;
+    }
+
+    /* =========================
+       BOTTOM VALUES
+    ========================= */
+
+    .director-values {
+        width: 100%;
+        margin: 35px 0 0;
+        padding: 23px 0 0;
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        border-top: 1px solid #e3e7ed;
+    }
+
+    .director-value {
+        min-width: 0;
+        min-height: 62px;
+        margin: 0;
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
+        gap: 13px;
+        border-right: 1px solid #dfe4ea;
+    }
+
+    .director-value:first-child {
+        padding-left: 0;
+    }
+
+    .director-value:last-child {
+        padding-right: 0;
+        border-right: 0;
+    }
+
+    .value-icon {
+        flex: 0 0 58px;
+        width: 58px;
+        height: 58px;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background: #fff0f1;
+        color: #ed1c24;
+    }
+
+    .value-icon svg {
+        display: block;
+        width: 28px;
+        height: 28px;
+        margin: 0;
+        padding: 0;
+        stroke: currentColor;
+    }
+
+    .value-text {
+        display: block;
+        min-width: 0;
+        margin: 0;
+        padding: 0;
+        font-size: 15px;
+        line-height: 1.35;
+        font-weight: 700;
+        color: #172239;
+    }
+
+    /* =========================
+       LARGE LAPTOP
+    ========================= */
+
+    @media (max-width: 1400px) {
+
+        .director-section {
+            padding: 60px 35px 55px;
+        }
+
+        .director-container {
+            grid-template-columns: minmax(440px, 43%) minmax(0, 57%);
+            column-gap: 25px;
+        }
+
+        .director-image-area {
+            height: 610px;
+        }
+
+        .director-image-wrapper {
+            left: 14%;
+            width: 77%;
+            height: 535px;
+        }
+
+        .director-red-frame {
+            left: 9%;
+            width: 70%;
+            height: 89%;
+        }
+
+        .director-quote-card {
+            left: 1%;
+            bottom: 68px;
+            width: 215px;
+            min-height: 245px;
+            padding: 21px 22px;
+        }
+
+        .quote-text {
+            font-size: 14px;
+        }
+
+        .director-description p {
+            font-size: 17px;
+        }
+
+        .director-values {
+            margin-top: 30px;
+        }
+
+        .director-value {
+            padding: 0 13px;
+            gap: 10px;
+        }
+
+        .value-icon {
+            flex-basis: 50px;
+            width: 50px;
+            height: 50px;
+        }
+
+        .value-icon svg {
+            width: 24px;
+            height: 24px;
+        }
+
+        .value-text {
+            font-size: 13px;
+        }
+    }
+
+    /* =========================
+       TABLET
+    ========================= */
+
+    @media (max-width: 1100px) {
+
+        .director-section {
+            padding: 55px 30px;
+        }
+
+        .director-container {
+            grid-template-columns: minmax(370px, 42%) minmax(0, 58%);
+            column-gap: 25px;
+        }
+
+        .director-image-area {
+            height: 555px;
+        }
+
+        .director-image-wrapper {
+            top: 35px;
+            left: 13%;
+            width: 80%;
+            height: 485px;
+        }
+
+        .director-red-frame {
+            top: 10px;
+            left: 7%;
+            width: 73%;
+            height: 87%;
+        }
+
+        .director-quote-card {
+            left: 0;
+            bottom: 45px;
+            width: 190px;
+            min-height: 215px;
+            padding: 19px 19px;
+        }
+
+        .quote-icon {
+            font-size: 48px;
+            line-height: 33px;
+        }
+
+        .quote-text {
+            font-size: 13px;
+            line-height: 1.5;
+        }
+
+        .quote-line {
+            width: 43px;
+            height: 3px;
+            margin-top: 13px;
+        }
+
+        .director-label-text {
+            font-size: 15px;
+        }
+
+        .director-title {
+            font-size: clamp(42px, 5vw, 58px);
+            letter-spacing: -2px;
+        }
+
+        .director-title-line {
+            margin: 23px 0 21px;
+        }
+
+        .director-description p {
+            font-size: 15px;
+            line-height: 1.65;
+            margin-bottom: 19px;
+        }
+
+        .director-signature {
+            margin-top: 25px;
+        }
+
+        .signature-name {
+            font-size: 40px;
+        }
+
+        .director-name {
+            font-size: 19px;
+        }
+
+        .director-position {
+            font-size: 15px;
+        }
+
+        .director-values {
+            margin-top: 27px;
+            padding-top: 18px;
+        }
+
+        .director-value {
+            padding: 0 9px;
+            gap: 8px;
+        }
+
+        .director-value:first-child {
+            padding-left: 0;
+        }
+
+        .director-value:last-child {
+            padding-right: 0;
+        }
+
+        .value-icon {
+            flex-basis: 44px;
+            width: 44px;
+            height: 44px;
+        }
+
+        .value-icon svg {
+            width: 21px;
+            height: 21px;
+        }
+
+        .value-text {
+            font-size: 11px;
+        }
+
+        .director-section::after {
+            width: 130px;
+            height: 130px;
+            right: -75px;
+        }
+    }
+
+    /* =========================
+       SMALL TABLET
+    ========================= */
+
+    @media (max-width: 850px) {
+
+        .director-section {
+            padding: 50px 25px;
+        }
+
+        .director-container {
+            grid-template-columns: 1fr;
+            row-gap: 55px;
+        }
+
+        .director-image-area {
+            width: 100%;
+            max-width: 650px;
+            height: 570px;
+            margin: 0 auto;
+        }
+
+        .director-image-wrapper {
+            left: 15%;
+            width: 70%;
+            height: 510px;
+        }
+
+        .director-red-frame {
+            left: 11%;
+            width: 64%;
+            height: 88%;
+        }
+
+        .director-quote-card {
+            left: 2%;
+            bottom: 35px;
+            width: 220px;
+            min-height: 230px;
+            padding: 22px;
+        }
+
+        .quote-text {
+            font-size: 14px;
+        }
+
+        .director-content {
+            padding: 0;
+        }
+
+        .director-title {
+            font-size: clamp(44px, 8vw, 60px);
+        }
+
+        .director-description {
+            max-width: 100%;
+        }
+
+        .director-description p {
+            font-size: 16px;
+        }
+
+        .director-values {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            row-gap: 22px;
+        }
+
+        .director-value {
+            padding: 0 20px 0 0;
+            border-right: 1px solid #dfe4ea;
+        }
+
+        .director-value:nth-child(2) {
+            padding-left: 20px;
+            border-right: 0;
+        }
+
+        .director-value:nth-child(3) {
+            padding-left: 0;
+        }
+
+        .director-value:nth-child(4) {
+            padding-left: 20px;
+            border-right: 0;
+        }
+
+        .value-icon {
+            flex-basis: 52px;
+            width: 52px;
+            height: 52px;
+        }
+
+        .value-icon svg {
+            width: 24px;
+            height: 24px;
+        }
+
+        .value-text {
+            font-size: 14px;
+        }
+
+        .director-section::after {
+            display: none;
+        }
+    }
+
+    /* =========================
+       MOBILE
+    ========================= */
+
+    @media (max-width: 600px) {
+
+        .director-section {
+            padding: 40px 16px 45px;
+        }
+
+        .director-container {
+            row-gap: 42px;
+        }
+
+        .director-image-area {
+            height: 440px;
+            max-width: 100%;
+        }
+
+        .director-red-frame {
+            top: 5px;
+            left: 7%;
+            width: 74%;
+            height: 86%;
+            border-radius: 21px;
+        }
+
+        .director-image-wrapper {
+            top: 25px;
+            left: 12%;
+            width: 78%;
+            height: 385px;
+            border-width: 5px;
+            border-radius: 21px;
+        }
+
+        .director-quote-card {
+            left: 0;
+            bottom: 8px;
+            width: 185px;
+            min-height: 190px;
+            padding: 18px 17px;
+            border-radius: 15px;
+        }
+
+        .quote-icon {
+            font-size: 42px;
+            line-height: 28px;
+            margin-bottom: 6px;
+        }
+
+        .quote-text {
+            font-size: 12.5px;
+            line-height: 1.48;
+        }
+
+        .quote-line {
+            width: 38px;
+            height: 3px;
+            margin-top: 12px;
+        }
+
+        .director-dots {
+            top: 0;
+            right: 0;
+            width: 70px;
+            height: 65px;
+            background-size: 14px 14px;
+        }
+
+        .director-dots-bottom {
+            bottom: 0;
+            left: -15px;
+            width: 70px;
+            height: 60px;
+            background-size: 14px 14px;
+        }
+
+        .director-label {
+            gap: 9px;
+            margin-bottom: 13px;
+        }
+
+        .director-label-line {
+            width: 30px;
+            height: 3px;
+        }
+
+        .director-label-text {
+            font-size: 12px;
+            letter-spacing: 1.2px;
+        }
+
+        .director-title {
+            font-size: clamp(39px, 11vw, 48px);
+            line-height: 0.98;
+            letter-spacing: -1.8px;
+        }
+
+        .director-title-red {
+            margin-top: 5px !important;
+        }
+
+        .director-title-line {
+            width: 55px;
+            height: 3px;
+            margin: 21px 0 19px;
+        }
+
+        .director-description p {
+            font-size: 14px;
+            line-height: 1.65;
+            margin-bottom: 17px;
+        }
+
+        .director-signature {
+            margin-top: 23px;
+        }
+
+        .signature-name {
+            font-size: 38px;
+        }
+
+        .director-name {
+            margin-top: 6px;
+            font-size: 18px;
+        }
+
+        .director-position {
+            margin-top: 4px;
+            font-size: 14px;
+        }
+
+        .director-values {
+            grid-template-columns: 1fr;
+            row-gap: 16px;
+            margin-top: 27px;
+            padding-top: 19px;
+        }
+
+        .director-value,
+        .director-value:nth-child(2),
+        .director-value:nth-child(3),
+        .director-value:nth-child(4) {
+            width: 100%;
+            padding: 0;
+            border-right: 0;
+        }
+
+        .value-icon {
+            flex-basis: 48px;
+            width: 48px;
+            height: 48px;
+        }
+
+        .value-icon svg {
+            width: 22px;
+            height: 22px;
+        }
+
+        .value-text {
+            font-size: 13px;
+        }
+    }
+
+    /* =========================
+       VERY SMALL MOBILE
+    ========================= */
+
+    @media (max-width: 380px) {
+
+        .director-section {
+            padding-left: 13px;
+            padding-right: 13px;
+        }
+
+        .director-image-area {
+            height: 400px;
+        }
+
+        .director-image-wrapper {
+            left: 10%;
+            width: 82%;
+            height: 350px;
+        }
+
+        .director-red-frame {
+            left: 5%;
+            width: 76%;
+            height: 84%;
+        }
+
+        .director-quote-card {
+            width: 170px;
+            min-height: 178px;
+            padding: 16px 15px;
+        }
+
+        .quote-text {
+            font-size: 11.5px;
+        }
+
+        .director-title {
+            font-size: 37px;
+        }
+
+        .director-label-text {
+            font-size: 11px;
+        }
+
+        .director-description p {
+            font-size: 13px;
+        }
+
+        .signature-name {
+            font-size: 34px;
+        }
+
+        .director-name {
+            font-size: 17px;
+        }
+
+        .director-position {
+            font-size: 13px;
+        }
+    }
+</style>
 
 <body class="rs-smoother-yes">
 
@@ -48,10 +994,10 @@
         <div class="rs-header-area rs-header-five has-theme-light-green">
             <div class="container-fluid g-0">
                 <div class="rs-header-inner rs-sticky-header" id="rs-sticky-header">
-                    <div class="rs-header-left">
-                        <div class="rs-header-logo-wrapper">
-                            <div class="rs-header-logo">
-                                <a href="index.html"><img src="assets/images/logo/logo-green.png" alt="logo"></a>
+                    <div class="rs-header-left" style="background-color: #E30613;">
+                        <div class="rs-header-logo-wrapper" style="background-color: #E30613;">
+                            <div class="rs-header-logo" style="background-color: #E30613;">
+                                <a href="index.html"><img src="assets/images/logo/logo-green.png" alt="logo" style="background-color: #E30613;"></a>
                             </div>
                         </div>
                     </div>
@@ -162,10 +1108,10 @@
             </div>
             <div class="rs-header-area rs-header-five has-theme-light-green">
                 <div class="rs-header-inner">
-                    <div class="rs-header-left">
-                        <div class="rs-header-logo-wrapper">
-                            <div class="rs-header-logo">
-                                <a href="index.html"><img src="assets/images/logo/logo-green.png" alt="logo"></a>
+                    <div class="rs-header-left" style="background-color: #E30613;">
+                        <div class="rs-header-logo-wrapper" style="background-color: #E30613;">
+                            <div class="rs-header-logo" style="background-color: #E30613;">
+                                <a href="index.html"><img src="assets/images/logo/logo-green.png" alt="logo" style="background-color: #E30613;"></a>
                             </div>
                         </div>
                     </div>
@@ -276,6 +1222,143 @@
             </div>
         </div>
     </header>
+     <!-- Offcanvas area start -->
+   <div class="fix">
+    <div class="offcanvas-area" data-lenis-prevent>
+        <div class="offcanvas-wrapper">
+            <div class="offcanvas-content">
+
+                <div class="offcanvas-top d-flex justify-content-between align-items-center mb-20">
+                    <div class="offcanvas-logo" style="background-color: #E30613; height: 50px;">
+                        <a class="logo-black" href="index.html" style="background-color: #E30613;">
+                            <img src="assets/images/logo/logo-green.png" alt="logo" style="background-color: #E30613; margin-top: 10px;">
+                        </a>
+                    </div>
+                    <div class="offcanvas-close">
+                        <button class="offcanvas-close-icon animation--flip">
+                            <span class="offcanvas-m-lines">
+                                <span class="offcanvas-m-line line--1"></span>
+                                <span class="offcanvas-m-line line--2"></span>
+                                <span class="offcanvas-m-line line--3"></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Mobile Menu -->
+                <div class="mobile-menu">
+                    <div class="rs-offcanvas-menu mb-25">
+                        <nav></nav>
+                    </div>
+                </div>
+
+                <!-- About -->
+                <div class="offcanvas-about mb-30 d-none d-sm-block">
+                    <p>
+                        UNITECH ENGINEERING WORKS specializes in material handling and conveyor systems, offering engineered solutions for efficient and reliable industrial material movement including telescopic truck loading, belt, roller, and chain conveyors.
+                    </p>
+                </div>
+
+                <!-- Gallery (keep as it is) -->
+                <div class="offcanvas-gallery d-none d-sm-block">
+                    <div class="offcanvas-gallery-thumb-wrapper">
+                        <div class="offcanvas-popup-thumb">
+                            <a class="popup-image" href="gallery.html">
+                                <img src="assets/products-images/battery-operated-hydraulic-casting-conveyor-cart.jpg" alt="image">
+                            </a>
+                        </div>
+                        <div class="offcanvas-popup-thumb">
+                            <a class="popup-image" href="assets/images/gallery/2.png">
+                                <img src="assets/products-images/inkjet-printing-conveyor-b.jpg" alt="image">
+                            </a>
+                        </div>
+                        <div class="offcanvas-popup-thumb">
+                            <a class="popup-image" href="assets/images/gallery/3.png">
+                                <img src="assets/products-images/modular-chain-curve-conveyor.jpg" alt="image">
+                            </a>
+                        </div>
+                        <div class="offcanvas-popup-thumb">
+                            <a class="popup-image" href="assets/images/gallery/4.png">
+                                <img src="assets/products-images/motorised-bend-roller-conveyor.jpg" alt="image">
+                            </a>
+                        </div>
+                        <div class="offcanvas-popup-thumb">
+                            <a class="popup-image" href="assets/images/gallery/5.png">
+                                <img src="assets/products-images/inclined-cleated-belt-conveyor.jpg" alt="image">
+                            </a>
+                        </div>
+                        <div class="offcanvas-popup-thumb">
+                            <a class="popup-image" href="assets/images/gallery/6.png">
+                                <img src="assets/products-images/motorised-curved-expandable-conveyor.jpg" alt="image">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact -->
+                <div class="offcanvas-contact mb-30">
+                    <h4 class="offcanvas-title-meta">Contact Info</h4>
+                    <ul>
+
+                        <!-- Address -->
+                        <li class="d-flex align-items-center gap-15">
+                            <div class="offcanvas-contact-icon fa fa-home">
+                                <!-- icon same -->
+                                <!-- <svg xmlns="#" width="" height="" viewBox="" fill="none">
+                                    <path d="M11.8768 9.68475C11.3059 10.835 10.5331 11.9818 9.74128 13.0109C8.95198 14.0368 8.15999 14.9249 7.5643 15.5572C7.48514 15.6412 7.40956 15.7206 7.33802 15.7951C7.26648 15.7206 7.1909 15.6412 7.11174 15.5572C6.51605 14.9249 5.72406 14.0368 4.93476 13.0109C4.14299 11.9818 3.37019 10.835 2.79925 9.68475C2.22242 8.52266 1.89032 7.43373 1.89032 6.5C1.89032 3.50846 4.32934 1.08333 7.33802 1.08333C10.3467 1.08333 12.7857 3.50846 12.7857 6.5C12.7857 7.43373 12.4536 8.52266 11.8768 9.68475Z" fill=""></path>
+                                </svg> -->
+                            </div>
+                            <div class="offcanvas-contact-text">
+                                <a target="_blank" href="https://www.google.com/maps?q=DSIIDC+Engineering+Complex+Mangolpuri+Delhi">
+                                    A-8, A-9, DSIIDC Engineering Complex, Phase-1, Mangolpuri Industrial Area, New Delhi – 110083, India
+                                </a>
+                            </div>
+                        </li>
+
+                        <!-- Phone -->
+                        <li class="d-flex align-items-center gap-15">
+                            <div class="offcanvas-contact-icon fa fa-phone">
+                                <!-- icon same -->
+                            </div>
+                            <div class="offcanvas-contact-text">
+                                <a href="tel:01149064349">01149064349</a>
+                                <br>
+                                <a href="https://wa.me/919312771351" target="_blank">+91 9312771351</a>
+                            </div>
+                        </li>
+
+                        <!-- Email -->
+                        <li class="d-flex align-items-center gap-15">
+                            <div class="offcanvas-contact-icon fa fa-envelope">
+                                <!-- icon same -->
+                            </div>
+                            <div class="offcanvas-contact-text">
+                                <a href="mailto:unitechengineeringworks@gmail.com">unitechengineeringworks@gmail.com</a>
+                                <a href="mailto:unitech_engg_works@yahoo.com">unitech_engg_works@yahoo.com</a>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+ 
+                <!-- Social -->
+                <div class="offcanvas-social">
+                    <h4 class="offcanvas-title-meta">Follow Us</h4>
+                    <ul>
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="offcanvas-overlay"></div>
+<div class="offcanvas-overlay-white"></div>
+    <!-- Offcanvas area start -->
     <!-- Header area end -->
 
     <main>
@@ -317,10 +1400,10 @@
                             <h2 class="about-hero-title">
                                 Engineering<br>
                                 <span class="text-accent">Better Movement</span><br>
-                                for a Stronger Tomorrow
+                                for Industrial Operations
                             </h2>
                             <p class="about-hero-desc">
-                                We are a team of innovators, engineers and problem-solvers, dedicated to designing and delivering high-quality conveyor and material handling solutions that keep industries moving efficiently, safely and sustainably.
+                                UNITECH Engineering Works is a premier manufacturer of material handling and conveyor systems, delivering robust, high-efficiency solutions including portable telescopic truck loading conveyors, belt conveyors, roller conveyors, chain conveyors, and custom-engineered systems for industrial applications.
                             </p>
                             <div class="about-hero-features">
                                 <div class="about-hero-feature-item">
@@ -331,7 +1414,7 @@
                                         </svg>
                                     </div>
                                     <div class="about-feature-text">
-                                        Reliable<br>Solutions
+                                        Engineered<br>Reliability
                                     </div>
                                 </div>
                                 <div class="about-hero-feature-item">
@@ -342,7 +1425,7 @@
                                         </svg>
                                     </div>
                                     <div class="about-feature-text">
-                                        Industry-Focused<br>Approach
+                                        Custom Conveyor<br>Solutions
                                     </div>
                                 </div>
                                 <div class="about-hero-feature-item">
@@ -355,7 +1438,7 @@
                                         </svg>
                                     </div>
                                     <div class="about-feature-text">
-                                        Long-Term<br>Partnerships
+                                        Reputed Client<br>Partnerships
                                     </div>
                                 </div>
                             </div>
@@ -370,7 +1453,7 @@
                                 <span class="card-dash"></span>
                                 <h4 class="card-title">
                                     Moving<br>
-                                    Possibilities<br>
+                                    Industries<br>
                                     Every Day
                                 </h4>
                             </div>
@@ -393,8 +1476,8 @@
                                 <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
                             </svg>
                         </div>
-                        <div class="about-stat-num">500+</div>
-                        <div class="about-stat-label">Happy Clients</div>
+                        <div class="about-stat-num">35+</div>
+                        <div class="about-stat-label">Reputed Clients</div>
                     </div>
                     <div class="about-stat-item">
                         <div class="about-stat-icon">
@@ -403,8 +1486,8 @@
                                 <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
                             </svg>
                         </div>
-                        <div class="about-stat-num">1000+</div>
-                        <div class="about-stat-label">Projects Delivered</div>
+                        <div class="about-stat-num">20+</div>
+                        <div class="about-stat-label">Conveyor Systems</div>
                     </div>
                     <div class="about-stat-item">
                         <div class="about-stat-icon">
@@ -416,8 +1499,8 @@
                                 <path d="M14 13h1"></path>
                             </svg>
                         </div>
-                        <div class="about-stat-num">20+</div>
-                        <div class="about-stat-label">Industries Served</div>
+                        <div class="about-stat-num">40'</div>
+                        <div class="about-stat-label">Vehicle Body Length</div>
                     </div>
                     <div class="about-stat-item">
                         <div class="about-stat-icon">
@@ -427,8 +1510,8 @@
                                 <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
                             </svg>
                         </div>
-                        <div class="about-stat-num">18+</div>
-                        <div class="about-stat-label">Years of Experience</div>
+                        <div class="about-stat-num">100%</div>
+                        <div class="about-stat-label">Engineered Solutions</div>
                     </div>
                 </div>
             </div>
@@ -444,7 +1527,7 @@
                                 <img src="assets/images/about/about-story-facility.jpg" alt="Corporate Headquarters Facility">
                                 <div class="about-story-img-badge">
                                     <span class="badge-dash"></span>
-                                    <strong>Built to<br>Move Industries</strong>
+                                    <strong>Engineered to<br>Move Industries</strong>
                                 </div>
                             </div>
                             <div class="about-story-bottom-row">
@@ -457,7 +1540,7 @@
                                             <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"></path>
                                         </svg>
                                     </div>
-                                    <p>From<br>Concept to<br>Continuous<br>Movement</p>
+                                    <p>Engineered<br>Conveyor<br>& Material<br>Handling</p>
                                 </div>
                             </div>
                         </div>
@@ -470,23 +1553,23 @@
                             </svg>
                             <div class="about-story-content">
                                 <div class="about-eyebrow">
-                                    <span class="about-dash"></span> OUR STORY
+                                    <span class="about-dash"></span> OUR COMPANY
                                 </div>
                                 <h2 class="about-section-title">
-                                    A Journey of<br>
-                                    <span class="text-accent">Innovation & Trust</span>
+                                    Specialized in<br>
+                                    <span class="text-accent">Conveyor & Handling Systems</span>
                                 </h2>
                                 <p class="about-story-desc">
-                                    What started as a vision to simplify industrial material handling has grown into a trusted name in conveyor solutions. Over the years, we have worked with businesses across diverse industries, delivering customized, durable and high-performance systems that improve efficiency and productivity.
+                                    UNITECH Engineering Works is a dedicated manufacturing and engineering enterprise specializing in material handling solutions. With works situated at DSIIDC Engineering Complex, Mangolpuri, New Delhi, we design and produce a comprehensive range of heavy-duty industrial conveying solutions.
                                 </p>
                                 <p class="about-story-desc">
-                                    Our journey is built on a simple belief – when industries move better, the world moves forward. Today, we continue to innovate, expand and create solutions that empower our clients to achieve more.
+                                    Our product range spans portable telescopic truck loading and unloading conveyors (single stage, double stage, and motorized wheel configurations), belt conveyors, motorized and flexible gravity roller conveyors, modular chain curves, slat chain systems, stackers, inkjet printing conveyors, de-dusting tunnels, and vertical loading unloading conveyors (VLC).
                                 </p>
-                                <a href="#leadership" class="about-red-btn">
-                                    Our Journey <span>&rarr;</span>
+                                <a href="contact.html" class="about-red-btn">
+                                    Contact Us <span>&rarr;</span>
                                 </a>
                                 <div class="about-bg-watermark-text">
-                                    MOVING INDUSTRIES<br>FOR A BRIGHTER<br>TOMORROW
+                                    UNITECH ENGINEERING WORKS<br>MATERIAL HANDLING &<br>CONVEYOR SYSTEMS
                                 </div>
                             </div>
                         </div>
@@ -496,50 +1579,244 @@
         </section>
 
         <!-- 4. DIRECTOR / LEADERSHIP SECTION -->
-        <section class="about-director-section" id="leadership">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-5 col-md-12 text-center text-lg-start">
-                        <div class="about-director-visual">
-                            <div class="about-director-red-backdrop"></div>
-                            <div class="about-director-img-container">
-                                <img src="assets/images/about/about-director.jpg" alt="Rajesh Kumar - Managing Director" class="about-director-img">
-                            </div>
-                            <div class="about-director-quote-card">
-                                <span class="about-quote-icon">&ldquo;</span>
-                                <p class="about-quote-text">
-                                    "Our goal is to make material handling smarter, safer and more efficient for every industry we serve."
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-7 col-md-12">
-                        <div class="about-director-details">
-                            <div class="about-eyebrow">
-                                <span class="about-dash"></span> MEET OUR DIRECTOR
-                            </div>
-                            <h2 class="about-section-title">
-                                Leadership<br>
-                                <span class="text-accent">with a Purpose</span>
-                            </h2>
-                            <p class="about-story-desc">
-                                Our Director brings a strong vision, industry expertise and a passion for problem-solving to the organization. With years of experience in the material handling industry, he has been instrumental in driving our growth, innovation and commitment to customer satisfaction.
-                            </p>
-                            <p class="about-story-desc">
-                                Under his guidance, we continue to push boundaries, adopt new technologies and build long-term relationships with our clients.
-                            </p>
-                            <div class="about-signature-wrapper">
-                                <div class="about-signature-script">Rajesh Kumar</div>
-                                <div class="about-signature-meta">
-                                    <strong>Rajesh Kumar</strong>
-                                    <span>Managing Director</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <section class="director-section">
+
+    <div class="director-container">
+
+        <!-- IMAGE -->
+        <div class="director-image-area">
+
+            <div class="director-red-frame"></div>
+
+            <div class="director-dots"></div>
+
+            <div class="director-dots-bottom"></div>
+
+            <div class="director-image-wrapper">
+
+                <img
+                    src="assets/director.jpg"
+                    alt="UNITECH Engineering Works - Leadership"
+                >
+
             </div>
-        </section>
+
+
+            <!-- QUOTE -->
+            <div class="director-quote-card">
+
+                <span class="quote-icon">“</span>
+
+                <p class="quote-text">
+                    "Our objective is to engineer durable, efficient, and reliable material handling and conveyor systems tailored to every industrial application."
+                </p>
+
+                <span class="quote-line"></span>
+
+            </div>
+
+        </div>
+
+
+        <!-- CONTENT -->
+        <div class="director-content">
+
+            <div class="director-label">
+
+                <span class="director-label-line"></span>
+
+                <span class="director-label-text">
+                    Engineering Leadership
+                </span>
+
+            </div>
+
+
+            <div class="director-title">
+
+                <span>
+                    Commitment
+                </span>
+
+                <span class="director-title-red">
+                    to Excellence
+                </span>
+
+            </div>
+
+
+            <span class="director-title-line"></span>
+
+
+            <div class="director-description">
+
+                <p>
+                    UNITECH Engineering Works brings focused engineering expertise, technical precision, and dedicated problem-solving to the material handling and conveyor industry. We work closely with our clients to design, build, and supply dependable conveying systems that streamline plant logistics, truck loading, and production lines.
+                </p>
+
+                <p>
+                    From specialized telescopic truck loaders to custom belt, roller, and chain systems, we engineer equipment built for continuous industrial duty, operational safety, and maximum handling efficiency.
+                </p>
+
+            </div>
+
+
+            <!-- DIRECTOR DETAILS -->
+            <div class="director-signature">
+
+                <span class="signature-name">
+                    Unitech
+                </span>
+
+                <span class="director-name">
+                    UNITECH Engineering Works
+                </span>
+
+                <span class="director-position">
+                    Material Handling & Conveyor Systems
+                </span>
+
+            </div>
+
+
+            <!-- VALUES -->
+            <div class="director-values">
+
+                <!-- Growth -->
+                <div class="director-value">
+
+                    <span class="value-icon">
+
+                        <svg
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke-width="1.8"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        >
+                            <path d="M4 19V9"></path>
+                            <path d="M9 19V5"></path>
+                            <path d="M14 19v-7"></path>
+                            <path d="M19 19V3"></path>
+                            <path d="M3 19h18"></path>
+                            <path d="M15 6l3-3 3 3"></path>
+                        </svg>
+
+                    </span>
+
+                    <span class="value-text">
+                        Engineered<br>
+                        Performance
+                    </span>
+
+                </div>
+
+
+                <!-- Innovation -->
+                <div class="director-value">
+
+                    <span class="value-icon">
+
+                        <svg
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke-width="1.8"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        >
+                            <path d="M9 18h6"></path>
+                            <path d="M10 22h4"></path>
+                            <path d="M8.5 14.5C7 13.4 6 11.7 6 9.7A6 6 0 0 1 18 9.7c0 2-1 3.7-2.5 4.8-.8.6-1.2 1.1-1.3 1.5h-4.4c-.1-.4-.5-.9-1.3-1.5Z"></path>
+                        </svg>
+
+                    </span>
+
+                    <span class="value-text">
+                        Industrial<br>
+                        Durability
+                    </span>
+
+                </div>
+
+
+                <!-- Clients -->
+                <div class="director-value">
+
+                    <span class="value-icon">
+
+                        <svg
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke-width="1.8"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        >
+                            <circle
+                                cx="9"
+                                cy="8"
+                                r="3"
+                            ></circle>
+
+                            <circle
+                                cx="17"
+                                cy="9"
+                                r="2.5"
+                            ></circle>
+
+                            <path d="M3.5 19c.6-3 2.5-5 5.5-5s4.9 2 5.5 5"></path>
+
+                            <path d="M14 15c2.7-.5 5 .9 6 3.5"></path>
+                        </svg>
+
+                    </span>
+
+                    <span class="value-text">
+                        Reputed<br>
+                        Client Base
+                    </span>
+
+                </div>
+
+
+                <!-- Partnerships -->
+                <div class="director-value">
+
+                    <span class="value-icon">
+
+                        <svg
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke-width="1.8"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        >
+                            <path d="M7 11l-2.5 2.5a3 3 0 0 0 4.2 4.2l2.1-2.1"></path>
+
+                            <path d="M17 13l2.5-2.5a3 3 0 0 0-4.2-4.2l-2.1 2.1"></path>
+
+                            <path d="M8.5 15.5l7-7"></path>
+
+                            <path d="M3 7l3-3 3 3"></path>
+
+                            <path d="M21 17l-3 3-3-3"></path>
+                        </svg>
+
+                    </span>
+
+                    <span class="value-text">
+                        Custom<br>
+                        Solutions
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
 
         <!-- 5. MISSION, VISION & VALUES SECTION -->
         <section class="about-mvv-section">
@@ -549,7 +1826,7 @@
                         <span class="about-dash"></span> OUR MISSION, VISION & VALUES
                     </div>
                     <h2 class="about-section-title">
-                        Guided by Purpose, <span class="text-accent">Driven by Values</span>
+                        Engineered Purpose, <span class="text-accent">Industrial Quality</span>
                     </h2>
                 </div>
                 <div class="row about-mvv-grid g-4">
@@ -566,7 +1843,7 @@
                                 <h3 class="about-mvv-title">Our Mission</h3>
                             </div>
                             <p class="about-mvv-desc">
-                                To deliver innovative, reliable and cost-effective material handling solutions that enhance productivity, ensure safety and add value to our customers' operations.
+                                To engineer and manufacture high-quality, durable conveyor and material handling systems that optimize loading, unloading, conveying, and industrial productivity for our clients.
                             </p>
                         </div>
                     </div>
@@ -582,7 +1859,7 @@
                                 <h3 class="about-mvv-title">Our Vision</h3>
                             </div>
                             <p class="about-mvv-desc">
-                                To be a globally recognized leader in conveyor and material handling solutions, known for our innovation, quality and customer-centric approach.
+                                To be a premier and trusted manufacturer of specialized conveyor solutions, known for engineering precision, heavy-duty durability, and dependable customer service.
                             </p>
                         </div>
                     </div>
@@ -601,23 +1878,23 @@
                             <ul class="about-values-list">
                                 <li>
                                     <span class="about-val-check"><i class="ri-check-line"></i></span>
-                                    <span>Integrity in everything we do</span>
+                                    <span>Precision engineering in every conveyor</span>
                                 </li>
                                 <li>
                                     <span class="about-val-check"><i class="ri-check-line"></i></span>
-                                    <span>Customer success is our priority</span>
+                                    <span>Focus on client operational requirements</span>
                                 </li>
                                 <li>
                                     <span class="about-val-check"><i class="ri-check-line"></i></span>
-                                    <span>Continuous innovation</span>
+                                    <span>Robust & heavy-duty industrial build</span>
                                 </li>
                                 <li>
                                     <span class="about-val-check"><i class="ri-check-line"></i></span>
-                                    <span>Quality without compromise</span>
+                                    <span>Long-term partnerships with reputed clients</span>
                                 </li>
                                 <li>
                                     <span class="about-val-check"><i class="ri-check-line"></i></span>
-                                    <span>Building long-term partnerships</span>
+                                    <span>Comprehensive range of specialized systems</span>
                                 </li>
                             </ul>
                         </div>
@@ -636,36 +1913,36 @@
                                 <span class="about-dash"></span> WHY CHOOSE US
                             </div>
                             <h2 class="about-section-title">
-                                More Than a Manufacturer,<br>
-                                <span class="text-accent">A Trusted Partner</span>
+                                Engineered Solutions for<br>
+                                <span class="text-accent">Efficient Material Handling</span>
                             </h2>
                             <p class="about-story-desc">
-                                We combine engineering expertise, industry knowledge and a commitment to quality to deliver solutions that make a real difference.
+                                UNITECH Engineering Works delivers proven conveyor systems engineered to handle demanding industrial loading, unloading, sorting, and conveying requirements.
                             </p>
                             <div class="about-why-checklist">
                                 <div class="about-why-check-item">
                                     <span class="about-why-check-icon"><i class="ri-check-line"></i></span>
-                                    <span>Customized Solutions</span>
+                                    <span>20+ Conveyor System Models</span>
                                 </div>
                                 <div class="about-why-check-item">
                                     <span class="about-why-check-icon"><i class="ri-check-line"></i></span>
-                                    <span>On-Time Delivery</span>
+                                    <span>Telescopic Truck Loaders (Up to 40')</span>
                                 </div>
                                 <div class="about-why-check-item">
                                     <span class="about-why-check-icon"><i class="ri-check-line"></i></span>
-                                    <span>High-Quality Products</span>
+                                    <span>Trusted by 35+ Reputed Clients</span>
                                 </div>
                                 <div class="about-why-check-item">
                                     <span class="about-why-check-icon"><i class="ri-check-line"></i></span>
-                                    <span>Pan-India Support</span>
+                                    <span>Heavy-Duty Industrial Build</span>
                                 </div>
                                 <div class="about-why-check-item">
                                     <span class="about-why-check-icon"><i class="ri-check-line"></i></span>
-                                    <span>Experienced Team</span>
+                                    <span>Custom Engineering Capabilities</span>
                                 </div>
                                 <div class="about-why-check-item">
                                     <span class="about-why-check-icon"><i class="ri-check-line"></i></span>
-                                    <span>Long-Term Relationships</span>
+                                    <span>Dedicated Technical Support</span>
                                 </div>
                             </div>
                         </div>
@@ -699,9 +1976,9 @@
                                 <div class="about-why-bottom-wrap">
                                     <div class="about-why-divider"></div>
                                     <h3 class="about-why-cta-heading">
-                                        Let's Build a<br>
-                                        Smoother, Stronger<br>
-                                        Tomorrow Together.
+                                        Engineering Efficient<br>
+                                        Material Handling<br>
+                                        Solutions Together.
                                     </h3>
                                 </div>
                             </div>
@@ -727,15 +2004,15 @@
                 <div class="row g-5">
                     <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6">
                         <div class="rs-footer-widget footer-2-col-1">
-                            <h5 class="rs-footer-widget-title">About Company</h5>
+                            <!-- <h5 class="rs-footer-widget-title">About Company</h5> -->
+                             <img src="assets/images/logo/logo-green.png" alt=""> <br> <br>
                             <div class="rs-footer-widget-content">
                                 <p class="rs-footer-widget-description">
-                                    It was popularised in the 1960s with the release of Letraset sheets
-                                    containing Lorem Ipsums.
+                                    Unitech Engineering Works specializes in material handling and conveyor systems, offering engineered solutions for efficient and reliable industrial material movement.
                                 </p>
-                                <div class="rs-footer-widget-stroke-text">
+                                <!-- <div class="rs-footer-widget-stroke-text">
                                     <h3 class="rs-footer-stroke-text has-theme-orange">Since 2007</h3>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -746,16 +2023,16 @@
                             <div class="rs-footer-widget-content">
                                 <div class="rs-footer-widget-links has-theme-orange">
                                     <ul>
+                                        <li><a href="#">Home</a></li>
                                         <li><a href="#">About Us</a></li>
-                                        <li><a href="#">Projects</a></li>
+                                        <li><a href="#">Products</a></li>
+                                        <li><a href="#">Industries</a></li>
+                                        <li><a href="#">Clients</a></li>
+                                        <li><a href="#">Gallery</a></li>
+                                        <li><a href="#">Contact Us</a></li>
                                         <li><a href="#">Careers</a></li>
-                                        <li><a href="#">Blog</a></li>
-                                        <li><a href="#">Privacy Policy</a></li>
-                                        <li><a href="#">Services</a></li>
-                                        <li><a href="#">Pricing</a></li>
-                                        <li><a href="#">Team</a></li>
-                                        <li><a href="#">Contact</a></li>
-                                        <li><a href="#">Terms of use</a></li>
+                                        <!-- <li><a href="#">Contact</a></li>
+                                        <li><a href="#">Terms of use</a></li> -->
                                     </ul>
                                 </div>
                             </div>
@@ -769,15 +2046,16 @@
                                 <div class="rs-footer-widget-meta">
                                     <div class="rs-footer-widget-address">
                                         <a target="_blank" href="https://www.google.com/maps">
-                                            42 Mamnoun Street, Saba Carpet and Antiques Store, UK
+                                           A-8, A-9, DSIIDC Engineering Complex, Phase-1, Mangolpuri Industrial Area, New Delhi – 110083, India
                                         </a>
                                     </div>
 
                                     <h5 class="rs-footer-widget-title">Email Address</h5>
-                                    <p>Interested in working with us?</p>
+                                    <!-- <p>Interested in working with us?</p> -->
 
                                     <div class="rs-footer-widget-email">
-                                        <a href="mailto:industrie@gmail.com">industrie@gmail.com</a>
+                                        <a href="mailto:unitechengineeringworks@gmail.com">unitechengineeringworks@gmail.com</a>
+                                        <a href="mailto:unitech_engg_works@yahoo.com">unitech_engg_works@yahoo.com</a>
                                     </div>
                                 </div>
                             </div>
@@ -791,11 +2069,13 @@
                                 <div class="rs-footer-widget-contact-info">
                                     <div class="rs-footer-widget-number">
                                         <span>
-                                            <a href="tel:971551579261">+971 551 579 261</a>
+                                            <a href="tel:01149064349">01149064349</a> <br>
+
+                                            <a href="tel:+919312771351">+91 9312771351</a>
                                         </span>
-                                        <span>
-                                            <a href="tel:971551579261">+97 155 596 1659</a>
-                                        </span>
+                                        <!-- <span>
+                                            <a href="tel:+971551579261">+971 55 157 9261</a>
+                                        </span> -->
                                     </div>
                                 </div>
 
@@ -823,9 +2103,9 @@
                     <div class="col-xl-12">
                         <div class="rs-footer-copyright has-theme-orange text-center">
                             <p class="underline">
-                                © <span id="year">2025</span> Industrie.
+                                © <span id="year">2026</span> Unitech Engineering Works.
                                 Designed by
-                                <a href="https://rstheme.com/">RSTheme</a>
+                                <a href="https://wavezing.com/">Wavezing</a>
                             </p>
                         </div>
                     </div>
